@@ -3,15 +3,10 @@ require_relative './dance_module.rb'
 
 class Dancer
     include Dance
-    
-    class Dancer
-    extend MetaDancing
-  end
   
-  class Dancer
   extend FancyDance::ClassMethods
   include FancyDance::InstanceMethods
-  end
+  
  
   attr_accessor :name
  
